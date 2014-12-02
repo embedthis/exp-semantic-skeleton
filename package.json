@@ -1,0 +1,31 @@
+{
+    "name": "exp-semantic-scaffold",
+    "description": "Semantic Scaffold for Expansive",
+    "version": "0.1.0",
+    "keywords": [
+        "expansive-plugin",
+        "semantic"
+    ],
+    "licenses": "GPL",
+    "export": [
+        {
+            "from": [
+                "documents/**",
+                "partials/**",
+                "layouts/**"
+            ],
+            "to": "."
+        }
+    ],
+    "dependencies": {
+        "jquery": "~1.11",
+        "semantic": "~0.50"
+    },
+    "app": {
+        "client": {
+            "scripts": [
+                "lib/jquery/jquery.js"
+            ]
+        }
+    }
+}
