@@ -1,7 +1,8 @@
 {
-    "name": "exp-semantic-scaffold",
-    "description": "Semantic Scaffold for Expansive",
+    "name": "exp-semantic-skeleton",
+    "description": "Semantic Skeleton for Expansive",
     "version": "0.1.0",
+    "pak": ">=0.10",
     "keywords": [
         "expansive-plugin",
         "semantic"
@@ -14,18 +15,17 @@
                 "partials/**",
                 "layouts/**"
             ],
-            "to": "."
+            "to": "${TOP}",
+            "overwrite": false
         }
     ],
     "dependencies": {
         "jquery": "~1.11",
-        "semantic": "~0.50"
+        "semantic": "~0.50",
+        "exp-less": "~0.1",
+        "exp-css": "~0.1"
     },
-    "app": {
-        "client": {
-            "scripts": [
-                "lib/jquery/jquery.js"
-            ]
-        }
-    }
+    "blend": [
+        "expansive.json"
+    ]
 }

@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title><@= meta.title @></title>
     <@ partial('header') @>
 </head>
 <body>
-    <div class="ui inverted masthead">
-        <@ partial('nav') @>
-    </div>
-    <div class="content">
+    <@ partial('nav') @>
+    <main class="content">
         <@ content @>
-    </div>
-    <@ partial('footer') @>
-    <@ partial('scripts') @>
+    </main>
 </body>
 </html>

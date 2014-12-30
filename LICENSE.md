@@ -1,4 +1,4 @@
-exp-semantic-scaffold License
+exp-semantic-skeleton License
 ===
 
 [MIT](http://opensource.org/licenses/MIT)
