@@ -27,5 +27,6 @@
     },
     "blend": [
         "expansive.json"
-    ]
+    ],
+    "skeleton": true
 }
