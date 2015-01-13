@@ -8,25 +8,24 @@
         "semantic"
     ],
     "licenses": "GPL",
-    "export": [
-        {
-            "from": [
-                "documents/**",
-                "partials/**",
-                "layouts/**"
-            ],
-            "to": "${TOP}",
-            "overwrite": false
-        }
-    ],
     "dependencies": {
         "jquery": "~1.11",
         "semantic": "~0.50",
         "exp-less": "~0.1",
         "exp-css": "~0.1"
     },
+    "export": [
+        {
+            "from": [
+                "partials/**",
+                "layouts/**",
+                "source/**"
+            ],
+            "to": "${TOP}",
+            "overwrite": false
+        }
+    ],
     "blend": [
         "expansive.json"
-    ],
-    "skeleton": true
+    ]
 }
