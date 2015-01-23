@@ -11,8 +11,9 @@
     "dependencies": {
         "jquery": "~1.11",
         "semantic": "~0.50",
-        "exp-less": "~0.1",
-        "exp-css": "~0.1"
+        "exp-js": "~0.2",
+        "exp-less": "~0.2",
+        "exp-css": "~0.2"
     },
     "export": [
         {
@@ -27,5 +28,6 @@
     ],
     "blend": [
         "expansive.json"
-    ]
+    ],
+    "mode": "debug"
 }
