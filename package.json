@@ -2,12 +2,15 @@
     "name": "exp-semantic-skeleton",
     "description": "Semantic Skeleton for Expansive",
     "version": "0.1.0",
-    "pak": ">=0.10",
     "keywords": [
         "expansive-plugin",
         "semantic"
     ],
     "licenses": "GPL",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/embedthis/exp-semantic-skeleton.git"
+    },
     "dependencies": {
         "jquery": "~1.11",
         "semantic": "~0.50",
@@ -15,8 +18,14 @@
         "exp-less": "~0.2",
         "exp-css": "~0.2"
     },
-    "export": [
-        {
+    "pak": {
+        "blend": {
+            "pak": {
+                "?mode": "debug",
+                "?import": true
+            }
+        },
+        "export": {
             "from": [
                 "partials/**",
                 "layouts/**",
@@ -24,10 +33,8 @@
             ],
             "to": "${TOP}",
             "overwrite": false
-        }
-    ],
-    "blend": [
-        "expansive.json"
-    ],
-    "mode": "debug"
+        },
+        "manage": "expansive.json",
+        "version": ">=0.10"
+    }
 }
