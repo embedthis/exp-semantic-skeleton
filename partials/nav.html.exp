@@ -2,8 +2,8 @@
         <div class="column">
             <div class="ui inverted menu">
                 <span class="header left item">Demo</span>
-                <a class="item <@= menu('home') @>" href="/">Home</a>
-                <a class="item <@= menu('file') @>" href="/file.html">File</a>
+                <a class="item <@= active('home') @>" href="/">Home</a>
+                <a class="item <@= active('file') @>" href="/file.html">File</a>
             </div>
         </div>
 
