@@ -1,7 +1,7 @@
 {
     "name": "exp-semantic-skeleton",
     "description": "Semantic Skeleton for Expansive",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "keywords": [
         "expansive-plugin",
         "semantic"
@@ -17,6 +17,9 @@
         "exp-js": "~0.2",
         "exp-less": "~0.2",
         "exp-css": "~0.2"
+    },
+    "devDependencies": {
+        "pak": ">=0.11.3"
     },
     "pak": {
         "blend": {
@@ -34,7 +37,6 @@
             "to": "${TOP}",
             "overwrite": false
         },
-        "manage": "expansive.json",
-        "version": ">=0.10"
+        "manage": "expansive.json"
     }
 }
