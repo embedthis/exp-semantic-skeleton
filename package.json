@@ -17,7 +17,8 @@
         "exp-js": "~0.3",
         "exp-less": "~0.3",
         "exp-css": "~0.3",
-        "exp-html": "~0.2"
+        "exp-html": "~0.2",
+        "exp-canon": "~0.1"
     },
     "devDependencies": {
         "expansive": ">=0.6.0",
