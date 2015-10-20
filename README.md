@@ -35,10 +35,10 @@ mangling of scripts.
 #### expansive.json
 
 * less.enable &mdash; Enable the less service to process less files.
+* less.files &mdash; Array of less files to compile.
+* less.dependencies &mdash; Explicit map of dependencies if not using "stylesheet". 
 * less.stylesheet &mdash; Primary stylesheet to update if any less file changes.
     If specified, the "dependencies" map will be automatically created. 
-* less.dependencies &mdash; Explicit map of dependencies if not using "stylesheet". 
-* less.documents &mdash; Array of less files to compile.
 * css.prefix &mdash; Enable running autoprefixer on CSS files to handle browser specific extensions.
 * css.minify &mdash; Enable minifying CSS files.
 * js.enable &mdash; Enable minifying script files.
@@ -52,9 +52,9 @@ mangling of scripts.
     services: {
         'less': {
             enable: true,
-            stylesheet: 'css/all.css',
-            dependencies: { 'css/all.css.less' : '**.less' },
             files: [ '!**.less', '**.css.less' ]
+            dependencies: { 'css/all.css.less' : '**.less' },
+            stylesheet: 'css/all.css',
         },
         'css': {
             prefix: true,
