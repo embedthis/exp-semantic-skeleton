@@ -1,7 +1,7 @@
 {
     "name": "exp-semantic-skeleton",
     "description": "Semantic Skeleton for Expansive",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "keywords": [
         "expansive-plugin",
         "semantic"
@@ -24,28 +24,24 @@
         "expansive": ">=0.7.0",
         "pak": ">=0.11.3"
     },
-    "pak": {
-        "blend": {
-            "devDependencies": {
-                "?esp": "~6.x"
-            },
-            "directories": {
-                "?export": "contents/lib"
-            },
-            "pak": {
-                "?mode": "debug",
-                "?import": true
-            }
+    "blend": {
+        "devDependencies": {
+            "?esp": ">=7.0"
         },
-        "export": {
-            "from": [
-                "contents/**",
-                "layouts/**",
-                "partials/**"
-            ],
-            "to": "${TOP}",
-            "overwrite": false
+        "directories": {
+            "?export": "contents/lib"
         },
-        "manage": "expansive.json"
-    }
+        "?profile": "debug",
+        "?import": true
+    },
+    "export": {
+        "from": [
+            "contents/**",
+            "layouts/**",
+            "partials/**"
+        ],
+        "to": "${TOP}",
+        "overwrite": false
+    },
+    "manage": "expansive.json"
 }
