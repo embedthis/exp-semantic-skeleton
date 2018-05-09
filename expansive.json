@@ -2,7 +2,7 @@
     expansive.json - Configuration for exp-semantic-skeleton
  */
 {
-    release: {
+    prod: {
         services: {
             'css': {
                 '?minify': true
