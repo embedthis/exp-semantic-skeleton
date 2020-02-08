@@ -14,11 +14,11 @@
     "dependencies": {
         "embedthis/jquery": "~3",
         "embedthis/semantic-ui": "~2",
-        "embedthis/exp-js": "~0.3",
-        "embedthis/exp-less": "~0.3",
-        "embedthis/exp-css": "~0.3",
-        "embedthis/exp-html": "~0.2",
-        "embedthis/exp-canon": "~0.3"
+        "embedthis/exp-js": "~1",
+        "embedthis/exp-less": "~1",
+        "embedthis/exp-css": "~1",
+        "embedthis/exp-html": "~1",
+        "embedthis/exp-canon": "~1"
     },
     "devDependencies": {
         "expansive": ">=0.7.0",
